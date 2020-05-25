@@ -1,0 +1,15 @@
+{
+  "_aws": {
+    "Timestamp": "${timestamp}",
+    "LogGroupName": "Foo",
+    "CloudWatchMetrics": [
+      {
+        "Namespace": "MyApp",
+        "Dimensions": [["Operation"]],
+        "Metrics": [{ "Name": "ProcessingLatency", "Unit": "Milliseconds" }]
+      }
+    ]
+  },
+  "Operation": "Aggregator",
+  "ProcessingLatency": 100
+}
