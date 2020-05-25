@@ -12,6 +12,7 @@ RUN curl -O https://amazon-cloud-watch-agent.s3.amazonaws.com/debian/amd64/lates
     rm -rf /opt/aws/amazon-cloudwatch-agent/bin/config-downloader
 
 COPY ./amazon-cloudwatch-agent.json /opt/aws/amazon-cloudwatch-agent/bin/default_linux_config.json
+COPY ./credentials /root/.aws/credentials
 
 ENV RUN_IN_CONTAINER="True"
 ENTRYPOINT ["/opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent"]

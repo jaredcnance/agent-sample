@@ -1,3 +1,2 @@
-export AWS_REGION=us-west-2
-export AWS_SECRET_ACCESS_KEY=
-export AWS_ACCESS_KEY_ID=
+1. Update credentials.sample with the proper credentials and rename to credentials
+2. ./start.sh
